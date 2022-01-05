@@ -7,6 +7,7 @@ public class MethodMain {
 	public static void main(String[] args) {
 		
 		System.out.println("MainMethod Start");
+		System.out.println("GitHub Test");
 		
 		// 객제 생성 코드
 		// new 클래스명();
