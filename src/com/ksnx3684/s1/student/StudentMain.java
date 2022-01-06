@@ -9,7 +9,7 @@ public class StudentMain {
 		StudentUtil makeStudents = new StudentUtil();
 		Student[] students = makeStudents.makeStudents();
 		
-		sv.viewStudents(students);
+		sv.view(students);
 		
 //		--- 단일 학생 정보 출력 ---
 //		StudentView sv = new StudentView();

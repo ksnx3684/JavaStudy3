@@ -4,9 +4,13 @@ public class StudentUtil {
 	// 학생 객체를 생성하고 정보를 입력 받는 곳
 	Scanner sc; // Scanner sc를 멤버변수로 선언
 	
-	public void initUtil() { // 메서드
+	public StudentUtil() {
 		this.sc = new Scanner(System.in);
 	}
+	
+//	public void initUtil() { // 메서드
+//		this.sc = new Scanner(System.in);
+//	}
 	
 	public Student search(Student[] students) {
 		// 검색할 학생의 번호를 입력

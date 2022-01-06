@@ -27,7 +27,7 @@ public class StudentMain2 {
 		
 		Student student2 = makeStudents.search(students);
 		if(student2 != null) {
-			sv.viewStudent(student2);
+			sv.view(student2);
 		} else {
 			System.out.println("학생없음");
 		}

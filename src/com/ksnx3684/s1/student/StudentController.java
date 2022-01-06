@@ -6,7 +6,7 @@ public class StudentController {
 		Scanner sc = new Scanner(System.in);
 		boolean check = true;
 		StudentUtil studentUtil = new StudentUtil();
-		studentUtil.initUtil();
+		//studentUtil.initUtil();
 		StudentView studentView = new StudentView();
 		Student[] students = null;
 		
@@ -24,21 +24,21 @@ public class StudentController {
 				break;
 			case 2:
 				if(students != null) {
-					studentView.viewStudents(students);
+					studentView.view(students);
 				} else {
-					studentView.viewMessage("학생 정보가 없습니다.");
+					studentView.view("학생 정보가 없습니다.");
 				}
 				break;
 			case 3:
 				if(students == null) {
-					studentView.viewMessage("학생 정보가 없습니다.");
+					studentView.view("학생 정보가 없습니다.");
 					continue;
 				}
 				Student student = studentUtil.search(students);
 				if(student != null) {
-					studentView.viewStudent(student);
+					studentView.view(student);
 				} else {
-					studentView.viewMessage("검색 결과가 없습니다.");
+					studentView.view("검색 결과가 없습니다.");
 				}
 				break;
 			default :
