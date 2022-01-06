@@ -5,10 +5,11 @@ import java.util.Scanner;
 public class CarMain {
 
 	public static void main(String[] args) {
+		
+		Car.company = "BMW";
 		// 변수 선언 = new 생성자호출
 		Car car = new Car(); // 기본생성자 호출
 //		car.brand="k7";
-//		car.company="Kia";
 //		car.cc=2000;
 		car.info();
 		// car.Car(); // error 발생
